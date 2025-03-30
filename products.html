@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Our Products - Kenya Nut Company</title>
+     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg.png">
+    <link rel="manifest" href="manifest.json">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            height:100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #11e82e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .nav {
+            width: 200px;
+            background-color: #215a06;
+            padding: 20px;
+            height: 100vh; /* Full height */
+            position: fixed; /* Fixed position */
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .nav a.active {
+    background-color: #0056b3; /* Change background color */
+    color: white; /* Change text color */
+}
+
+        .nav a:hover {
+            background-color: #0056b3;
+        }
+
+       .content {
+            margin-left: 220px; /* Space for the navigation */
+            padding: 20px;
+            max-width: 800px;
+            flex: 1;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .course {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .course button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .course button:hover {
+            background-color: #218838;
+        }
+
+        .details {
+            display: none;
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #215a06;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+     <div class="nav">
+        <h3>KNC @ 50</h3>
+        <a href="index.html">Dashboard</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html"class="active">Our products</a>
+        <a href="events.html">Events</a>
+        <a href="news.html">Latest News</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="content">
+        <h2>Our Products</h2>
+        <div class="course">
+            <h3>Out Of Africa</h3>
+            <button onclick="showDetails('dataScience')">View Details</button>
+            <div class="details" id="dataScience">
+                <img src="outofAfrica.jpg.png" alt="Out Of Africa Products" style="width:50%; height:50%;">
+                <p><strong>Description:</strong> Out of Africa is one of the leading producers of nuts, tea, chocolates and coffee in East Africa. Using sustainable agriculture methods, we produce roasted coffee, green coffee, chocolate, tea, nuts & oils. </p>
+                <p><strong>Website:</strong>  View our full range of Out of Africa Products at outofafrica.com</p>
+            </div>
+        </div>
+        <div class="course">
+            <h3>Nutfields</h3>
+            <button onclick="showDetails('cybersecurity')">View Details</button>
+            <div class="details" id="cybersecurity">
+                <img src="nutfields.jpg.png" alt="Nutfields Products" style="width:50%; height:50%;">
+                <p><strong>Description:</strong> Nutfields range of nuts provides you with remarkable quality of nuts affordably, conveniently packed to satisfy your delectable taste buds. They come packaged in salted and unsalted cashew, macadamia and mixed nuts.</p>
+                <p><strong>Website:</strong> View our full range of Nutfields Products at nutfields.com </p>
+            </div>
+        </div>
+        <div class="course">
+            <h3>Morendat</h3>
+            <button onclick="showDetails('webDevelopment')">View Details</button>
+            <div class="details" id="webDevelopment">
+                <img src="morendat.jpg.png" alt="Morendat Products" style="width:50%; height:50%;">
+                <p><strong>Description:</strong> Our journey began north of the fresh waters of Lake Naivasha, in the fabled Great Rift Valley. With decades of experience from their professions, Morendat’s expert team of livestock farmers, butchers and chefs began by specially crossbreeding steers from a thorough selection of Black Angus, local Boran, Charolais cattle and Simmental, as the genesis of creating the most superior beef.   At the farm, our cattle are feedlot reared and nourished with an especially rich assortment of choice grains and the mineral-rich clear waters of the Great Rift Valley, resulting in Morendat’s signature marbled, tender and flavoursome beef.</p>
+                <p><strong>Website:</strong> View our full range of Morendat Products at morendatfarm.com</p>
+            </div>
+        </div>
+        <!-- Additional courses can be added in a similar manner -->
+        <div class="course">
+            <h3>Leleshwa Wine</h3>
+            <button onclick="showDetails('machineLearning')">View Details</button>
+            <div class="details" id="machineLearning">
+                <img src="leleshwa.jpg.png" alt="Leleshwa Products" style="width:50%; height:50%;">
+                <p><strong>Description:</strong> Leleshwa wines capture the essence of the untamed Kenyan spirit. It’s the creative element that drives us, binds us, and unites us. As Kenyans, we continually seek opportunities to express ourselves beautifully, naturally, artistically. We found a way to nurture this irrepressible essence and put it in a bottle.</p>
+                <p><strong>Website:</strong> leleshwa.com</p>
+            </div>
+        </div>
+    </div>
+ <footer>
+        <p>&copy; 2025 Kenya Nut Company. All rights reserved.</p>
+    </footer>
+    <script>
+        function showDetails(courseId) {
+            const details = document.querySelectorAll('.details');
+            details.forEach(detail => {
+                if (detail.id === courseId) {
+                    detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+                } else {
+                    detail.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

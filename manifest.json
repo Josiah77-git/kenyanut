@@ -1,0 +1,29 @@
+{
+    "name": "Kenya Nut Company",
+    "short_name": "KenyaNut",
+    "icons": [
+        {
+            "src": "384x322.jpg",
+            "sizes": "384x322",
+            "type": "image/png",
+            "purpose": "any maskable" 
+        },
+        {
+            "src": "191x161.jpg",
+            "sizes": "191x161",
+            "type": "image/png"
+        },
+        {
+            "src": "512x430.jpg",
+            "sizes": "512x430",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#007bff",
+    "background_color": "#ffffff",
+    "start_url": "./index.html/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "description": "Official website of Kenya Nut Company",
+    "lang": "en"
+}
